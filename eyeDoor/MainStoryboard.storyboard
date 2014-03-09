@@ -483,6 +483,50 @@
         <image name="eye.png" width="61" height="34"/>
         <image name="screen_overlay.png" width="291" height="221"/>
     </resources>
+    <classes>
+        <class className="AboutViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutViewController.h"/>
+        </class>
+        <class className="ActivityDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ActivityDetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="removeEntryButtonPressed:"/>
+                <relationship kind="outlet" name="dateLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="removeEntryButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="LiveFeedViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LiveFeedViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="saveCurrentFrame:"/>
+                <relationship kind="outlet" name="activityTable" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="mjpegView" candidateClass="MotionJpegImageView"/>
+                <relationship kind="outlet" name="staticNoiseImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="takePhotoButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="MotionJpegImageView" superclassName="UIImageView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MotionJpegImageView.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SettingsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="clearAllButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="controlPortTextArea" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="deviceTokenLabel" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="openConfigButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="resetButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="saveButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="streamingPortTextArea" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="urlTextArea" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -1,4 +1,4 @@
 eyeDoor
 =======
 
-University Project
+iOS client for eyeDoor. A prototype smart doorbell produced as part of my Software Engineering Thesis.
